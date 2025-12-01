@@ -28,6 +28,7 @@
     data-overflow="true"
   >
     <div class="column">
+    {% render 'show_error', settings: settings, devices: devices %}
     {% for device in devices %}
       {% render "tailscale_device" with device: device %}
     {% endfor %}
